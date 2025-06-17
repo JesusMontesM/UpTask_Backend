@@ -6,7 +6,7 @@ export const corsConfig: CorsOptions = {
   // definimos el origen que queremos darle acceso
   // y callback va a ser llamado cuando el origen es valido
   origin: function (origin, callback) {
-    const whitelist = [process.env.FRONTEND_URL]; // url de nuestro frontend
+    const whitelist = [process.env.FRONTEND_URL || "https://up-task-frontend-orcin-phi.vercel.app"]; // url de nuestro frontend
 
     // si estamos en modo api y el origen es undefined, entonces le damos acceso a undefined
     if (process.argv[2] === "--api") {
