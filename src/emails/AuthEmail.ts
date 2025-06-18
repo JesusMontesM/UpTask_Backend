@@ -15,7 +15,7 @@ export class AuthEmail {
     // usamos transporter con .sendmail para enviar un mail
     const info = await transporter.sendMail({
       // el correo que envia el mail
-      from: "UpTask <admin@uptask.com>",
+      from: "UpTask <eammontesjesus@gmail.com>",
       // el destinatario del mail
       to: user.email,
       // el asunto del mail
